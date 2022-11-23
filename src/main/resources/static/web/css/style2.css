@@ -1,0 +1,363 @@
+.recent-work.card {
+  border-radius: 10px !important;
+}
+
+.recent-work .recent-work-vertical {
+  background: rgb(199, 199, 216);
+  background: linear-gradient(0deg, rgba(199, 199, 216, 1) 0%, rgba(255, 255, 255, 0) 33.333%, rgba(97, 84, 199, 1) 66.666%, rgba(255, 255, 255, 0) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+
+.recent-work .recent-work-vertical:hover div.recent-work-content {
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+}
+
+.recent-work .recent-work-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+
+.relleno {
+  padding-bottom: 50vh;
+}
+nav{
+  min-width: 100;
+}
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.bgstyle {
+  background: radial-gradient(100% 225% at 100% 0%, #FAFF00 0%, #000000 100%), linear-gradient(235deg, #DB00FF -8%, #000000 100%), linear-gradient(45deg, #241E92 0%, #241E92 40%, #5432D3 40%, #5432D3 50%, #7B6CF6 50%, #7B6CF6 70%, #E5A5FF 70%, #E5A5FF 100%), linear-gradient(180deg, #01024E 0%, #01024E 43%, #543864 43%, #543864 62%, #8B4367 62%, #8B4367 80%, #FF6464 80%, #FF6464 100%);
+  background-blend-mode: overlay, hard-light, overlay, normal;
+}
+
+.box {
+  background: rgb(255, 0, 249);
+  background: linear-gradient(185deg, rgba(255, 0, 249, 1) 12%, rgba(18, 9, 121, 1) 52%, rgba(2, 200, 223, 1) 84%);
+}
+
+main {
+  min-height: 72.8vh;
+}
+
+nav {
+  min-height: 10vh;
+}
+
+
+.textborders {
+  text-decoration-line: underline;
+}
+
+button {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+body {
+  font: 20px "Helvetica Neue", Helvetica, sans-serif;
+  background: #fbfbfb;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cardheader {
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  padding: 50px 0;
+  font-weight: 200;
+}
+
+.header__title {
+  font-size: 25px;
+  color: #333;
+}
+
+.header__subtitle {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.header__body {
+  min-height: 32px;
+}
+
+.panel {
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "OCRA";
+  src: url("fonts/OCRA.otf");
+  src: url("fonts/OCRA.otf?#iefix") format("embedded-opentype"),
+    url("fonts/OCRA.ttf") format("truetype");
+}
+
+.cardc {
+  font: 16px/1.5 "Helvetica Neue", Helvetica, sans-serif;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 425px;
+  height: 270px;
+  text-align: left;
+  padding: 30px;
+  margin-bottom: 50px;
+  color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+}
+
+.card__number {
+  font-size: 30px;
+  padding: 90px 0 15px;
+  text-align: center;
+}
+
+.card__expiry-date {
+  font-size: 14px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.card__owner {
+  text-align: left;
+}
+
+.card__logo {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.card__strip {
+  background: #000;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.card__signature {
+  float: left;
+  width: 65%;
+  height: 40px;
+  margin-left: 10px;
+  background: #999;
+}
+
+.card__ccv {
+  float: left;
+  margin-top: 5px;
+  padding: 7px;
+  background: #fff;
+  color: #111;
+  line-height: 1;
+}
+
+.card--front {
+  font-size: 16px;
+  font-family: "Source Code Pro";
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.card--back {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+}
+
+.TITANIUM {
+  background: url(../assets/cool-background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.SILVER {
+  background: url(../assets/preview.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.GOLD {
+  background: url(../assets/alexander-grey-yoWkkoUbG4E-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.accimg img {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+@media (max-width: 425px){
+  .accimg img {
+    background-size: cover !important;
+    background-position: center !important;
+    height: 22rem !important;
+  }
+  .transferImg img {
+    background-size: cover !important;
+    background-position: center !important;
+    height: 22rem !important;
+  }
+  .loansImg img{
+    background-size: cover !important;
+    background-position: center !important;
+    height: 22rem !important;
+  }
+  .cardheader {
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-weight: 200;
+  }
+  
+  .header__title {
+    font-size: 25px;
+    color: #333;
+  }
+  
+  .header__subtitle {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .header__body {
+    min-height: 32px;
+  }
+  
+  .panel {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  @font-face {
+    font-family: "OCRA";
+    src: url("fonts/OCRA.otf");
+    src: url("fonts/OCRA.otf?#iefix") format("embedded-opentype"),
+      url("fonts/OCRA.ttf") format("truetype");
+  }
+  
+  .cardc {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, sans-serif;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 325px;
+    height: 170px;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 50px;
+    color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+  
+  }
+  
+  .card__number {
+    font-size: 25px;
+    padding: 10px 0 15px;
+    text-align: center;
+  }
+  
+  .card__expiry-date {
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  .card__owner {
+    text-align: left;
+  }
+  
+  .card__logo {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .card__strip {
+    background: #000;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .card__signature {
+    float: left;
+    width: 65%;
+    height: 40px;
+    margin-left: 10px;
+    background: #999;
+  }
+  
+  .card__ccv {
+    float: left;
+    margin-top: 5px;
+    padding: 7px;
+    background: #fff;
+    color: #111;
+    line-height: 1;
+  }
+  
+  .card--front {
+    font-size: 16px;
+    font-family: "Source Code Pro";
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+  }
+  
+  .card--back {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+}
+
